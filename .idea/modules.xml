@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Cactusfix.iml" filepath="$PROJECT_DIR$/.idea/modules/Cactusfix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NoHotbarLooping.iml" filepath="$PROJECT_DIR$/.idea/modules/NoHotbarLooping.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/mc-mods.iml" filepath="$PROJECT_DIR$/.idea/mc-mods.iml" />
     </modules>
   </component>
