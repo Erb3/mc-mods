@@ -17,10 +17,6 @@ Yes! You are more than welcome to include my mod in your modpack, if you credit 
 
 Originally I made it so players don't take damage, but I decided to remove this for the 1.0.0 release.
 
-**This is such a easy mod to make. Why did you even bother making this?!?**
-
-I was browsing thru Modrinth looking for a new project to work on, then I relised there was no mod that simply disabled cacti stealing your items. So I made this mod in half an hour.
-
 **Plz updat to forge**
 
 I won't update to forge, as I have never touched it, and have no plan to do so.

@@ -5,16 +5,6 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/../NoHotbarLooping" />
-        <option name="gradleHome" value="D:/Program Files/gradle-7.6" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/../NoHotbarLooping" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Cactusfix" />
         <option name="gradleHome" value="D:/Program Files/gradle-7.6" />
         <option name="modules">
