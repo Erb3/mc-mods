@@ -5,7 +5,10 @@
 ![Modrinth versions](https://img.shields.io/modrinth/game-versions/Z29y9YGt?style=for-the-badge)
 ![Modrinth Downloads](https://img.shields.io/modrinth/dt/Z29y9YGt?style=for-the-badge)
 
-Cacti are no longer stronger than lava! Cactusfix makes items not get destroyed by cacti. It still does damage entities / players, which is intentional. Cactusfix is made for the FabricMC Minecraft modding platform.
+Cacti are no longer stronger than lava! Cactusfix makes items not get destroyed by cacti. It still does damage mobs / players, which is intentional. Cactusfix is made for the FabricMC Minecraft modding platform.
+
+The mod works out of the box, just drag and drop it into your mods' folder. This is needed on the serverside too!
+There is a gamerule which can toggle Cactusfix on and off. It is called `shouldCactusDamageItems`, and is off by default. If you wish to enable cactus despawning items, you can run `/gamerule shouldCactusDamageItems true`.
 
 ## FAQ
 
