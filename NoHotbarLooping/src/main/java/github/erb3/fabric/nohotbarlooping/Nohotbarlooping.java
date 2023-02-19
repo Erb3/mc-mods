@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 public class Nohotbarlooping implements ModInitializer {
     public static Logger LOGGER = LoggerFactory.getLogger("NoHotbarLooping");
     public static MinecraftClient client;
+    public static boolean enabled = true;
 
     @Override
     public void onInitialize() {

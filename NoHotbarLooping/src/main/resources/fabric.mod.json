@@ -21,6 +21,9 @@
   "entrypoints": {
     "main": [
       "github.erb3.fabric.nohotbarlooping.Nohotbarlooping"
+    ],
+    "modmenu": [
+      "github.erb3.fabric.nohotbarlooping.ModMenuIntegration"
     ]
   },
   "mixins": [
@@ -28,6 +31,12 @@
   ],
   "depends": {
     "fabricloader": ">=0.14.13",
-    "minecraft": "1.19.3"
+    "minecraft": "1.19.3",
+    "java": ">=17"
+  },
+  "recommends": {
+    "modmenu": "*",
+    "cloth-config-api": "*",
+    "fabric-api": "*"
   }
 }
