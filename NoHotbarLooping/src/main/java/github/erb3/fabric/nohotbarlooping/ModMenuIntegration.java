@@ -5,7 +5,6 @@ import com.terraformersmc.modmenu.api.ModMenuApi;
 import me.shedaniel.clothconfig2.api.ConfigBuilder;
 import me.shedaniel.clothconfig2.api.ConfigCategory;
 import me.shedaniel.clothconfig2.api.ConfigEntryBuilder;
-import net.minecraft.text.Text;
 
 public class ModMenuIntegration implements ModMenuApi {
     @Override
@@ -14,14 +13,19 @@ public class ModMenuIntegration implements ModMenuApi {
         return parent -> {
             ConfigBuilder builder = ConfigBuilder.create()
                     .setParentScreen(parent)
-                    .setTitle(Text.of("NoHotbarLooping Config"));
+                    .setTitle(Nohotbarlooping.translate("config.title"));
 
-            ConfigCategory general = builder.getOrCreateCategory(Text.of("General"));
+            ConfigCategory general = builder.getOrCreateCategory(
+                    Nohotbarlooping.translate("config.category")
+            );
 
             ConfigEntryBuilder entryBuilder = builder.entryBuilder();
-            general.addEntry(entryBuilder.startBooleanToggle(Text.of("Enabled"), Nohotbarlooping.enabled)
+            general.addEntry(entryBuilder.startBooleanToggle(
+                        Nohotbarlooping.translate("config.enabled.name"),
+                        Nohotbarlooping.enabled
+                    )
                     .setDefaultValue(true)
-                    .setTooltip(Text.of("If NoHotbarLooping should be enabled."))
+                    .setTooltip(Nohotbarlooping.translate("config.enabled.description"))
                     .setSaveConsumer((newValue) -> {
                         Nohotbarlooping.enabled = newValue;
                     })

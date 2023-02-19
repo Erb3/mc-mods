@@ -2,6 +2,7 @@ package github.erb3.fabric.nohotbarlooping;
 
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.text.Text;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -14,5 +15,9 @@ public class Nohotbarlooping implements ModInitializer {
     public void onInitialize() {
         LOGGER.info("Hello from NoHotbarLooping main class!");
         client = MinecraftClient.getInstance();
+    }
+
+    public static Text translate(String key) {
+        return Text.translatable("nohotbarlooping." + key);
     }
 }
