@@ -19,7 +19,7 @@
   "icon": "assets/nohotbarlooping/icon.png",
   "environment": "client",
   "entrypoints": {
-    "main": [
+    "client": [
       "github.erb3.fabric.nohotbarlooping.Nohotbarlooping"
     ],
     "modmenu": [
@@ -32,11 +32,12 @@
   "depends": {
     "fabricloader": ">=0.14.13",
     "minecraft": "1.19.3",
-    "java": ">=17"
+    "java": ">=17",
+    "fabric-api": "*",
+    "fabric-key-binding-api-v1": "*"
   },
   "recommends": {
     "modmenu": "*",
-    "cloth-config-api": "*",
-    "fabric-api": "*"
+    "cloth-config-api": "*"
   }
 }

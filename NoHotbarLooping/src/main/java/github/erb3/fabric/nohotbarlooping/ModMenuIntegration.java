@@ -26,9 +26,7 @@ public class ModMenuIntegration implements ModMenuApi {
                     )
                     .setDefaultValue(true)
                     .setTooltip(Nohotbarlooping.translate("config.enabled.description"))
-                    .setSaveConsumer((newValue) -> {
-                        Nohotbarlooping.enabled = newValue;
-                    })
+                    .setSaveConsumer((newValue) -> Nohotbarlooping.enabled = newValue)
                     .build());
 
             return builder.build();
