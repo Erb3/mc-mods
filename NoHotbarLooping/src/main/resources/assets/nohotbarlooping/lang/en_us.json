@@ -3,6 +3,6 @@
   "nohotbarlooping.config.category": "General",
   "nohotbarlooping.config.enabled.name": "Enabled",
   "nohotbarlooping.config.enabled.description": "If NoHotbarLooping should be enabled, making hotbars not loop",
-  "nohotbarlooping.keybind.name": "Toggle if enabled",
-  "nohotbarlooping.keybind.category": "NoHotbarLooping"
+  "nohotbarlooping.keybinding.name": "Toggle if enabled",
+  "nohotbarlooping.keybinding.category": "NoHotbarLooping"
 }

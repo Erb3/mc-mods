@@ -17,7 +17,7 @@ import org.slf4j.LoggerFactory;
 
 public class Nohotbarlooping implements ClientModInitializer {
     public static MinecraftClient client;
-    private static KeyBinding keyBind;
+    private static KeyBinding keyBinding;
     private static ToastManager toaster;
 
     @SuppressWarnings("SpellCheckingInspection")
@@ -32,15 +32,15 @@ public class Nohotbarlooping implements ClientModInitializer {
         client = MinecraftClient.getInstance();
         toaster = client.getToastManager();
 
-        keyBind = KeyBindingHelper.registerKeyBinding(new KeyBinding(
-                MOD_ID + ".keybind.name",
+        keyBinding = KeyBindingHelper.registerKeyBinding(new KeyBinding(
+                MOD_ID + ".keybinding.name",
                 InputUtil.Type.KEYSYM,
                 GLFW.GLFW_KEY_P,
-                MOD_ID +".keybind.category"
+                MOD_ID +".keybinding.category"
         ));
 
         ClientTickEvents.END_CLIENT_TICK.register((client) -> {
-            while (keyBind.wasPressed()) {
+            while (keyBinding.wasPressed()) {
                 enabled = !enabled;
                 renderToast(enabled);
             }
