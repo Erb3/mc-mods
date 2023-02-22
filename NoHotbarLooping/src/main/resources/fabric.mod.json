@@ -20,7 +20,7 @@
   "environment": "client",
   "entrypoints": {
     "client": [
-      "github.erb3.fabric.nohotbarlooping.Nohotbarlooping"
+      "github.erb3.fabric.nohotbarlooping.NoHotbarLooping"
     ],
     "modmenu": [
       "github.erb3.fabric.nohotbarlooping.ModMenuIntegration"

@@ -15,7 +15,7 @@ import org.lwjgl.glfw.GLFW;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class Nohotbarlooping implements ClientModInitializer {
+public class NoHotbarLooping implements ClientModInitializer {
     public static MinecraftClient client;
     private static KeyBinding keyBinding;
     private static ToastManager toaster;
