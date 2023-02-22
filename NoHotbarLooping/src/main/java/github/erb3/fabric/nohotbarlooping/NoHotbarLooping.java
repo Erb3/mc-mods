@@ -21,8 +21,8 @@ public class NoHotbarLooping implements ClientModInitializer {
     private static ToastManager toaster;
 
     @SuppressWarnings("SpellCheckingInspection")
-    public static String MOD_ID = "nohotbarlooping";
-    public static Logger LOGGER = LoggerFactory.getLogger("NoHotbarLooping");
+    public static final String MOD_ID = "nohotbarlooping";
+    public static final Logger LOGGER = LoggerFactory.getLogger("NoHotbarLooping");
     public static boolean enabled = true;
 
 

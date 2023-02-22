@@ -21,10 +21,12 @@ public class CustomToast implements Toast {
     public static final int titleColor = Color.WHITE.getRGB();
     public static final int textColor = Color.LIGHT_GRAY.getRGB();
 
-    private ItemStack icon;
-    private Text title, text;
+    private final ItemStack icon;
+    private final Text title;
+    private final Text text;
+    private final long duration;
     private boolean timeStarted = false;
-    private long start, duration;
+    private long start;
 
     public CustomToast(@NotNull Item item, @NotNull String title, @NotNull String text) {
         this.icon = item.getDefaultStack();
