@@ -19,11 +19,13 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class Nohotbarlooping implements ClientModInitializer {
-    public static Logger LOGGER = LoggerFactory.getLogger("NoHotbarLooping");
     public static MinecraftClient client;
     private static KeyBinding keyBind;
     private static ToastManager toaster;
 
+    @SuppressWarnings("SpellCheckingInspection")
+    public static String MOD_ID = "nohotbarlooping";
+    public static Logger LOGGER = LoggerFactory.getLogger("NoHotbarLooping");
     public static boolean enabled = true;
 
 
@@ -34,10 +36,10 @@ public class Nohotbarlooping implements ClientModInitializer {
         toaster = client.getToastManager();
 
         keyBind = KeyBindingHelper.registerKeyBinding(new KeyBinding(
-                "nohotbarlooping.keybind.name",
+                MOD_ID + ".keybind.name",
                 InputUtil.Type.KEYSYM,
                 GLFW.GLFW_KEY_P,
-                "nohotbarlooping.keybind.category"
+                MOD_ID +".keybind.category"
         ));
 
         ClientTickEvents.END_CLIENT_TICK.register((client) -> {
@@ -66,6 +68,6 @@ public class Nohotbarlooping implements ClientModInitializer {
     }
 
     public static Text translate(String key) {
-        return Text.translatable("nohotbarlooping." + key);
+        return Text.translatable(MOD_ID + "." + key);
     }
 }
