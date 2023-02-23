@@ -35,7 +35,7 @@ public class NoHotbarLooping implements ClientModInitializer {
         keyBinding = KeyBindingHelper.registerKeyBinding(new KeyBinding(
                 MOD_ID + ".keybinding.name",
                 InputUtil.Type.KEYSYM,
-                GLFW.GLFW_KEY_P,
+                GLFW.GLFW_KEY_PERIOD,
                 MOD_ID +".keybinding.category"
         ));
 
@@ -53,10 +53,10 @@ public class NoHotbarLooping implements ClientModInitializer {
 
         if (enabled) {
             item = Items.REDSTONE_BLOCK;
-            title = "Hotbar looping disabled";
+            title = translate("toast.enabled").getString();
         } else {
             item = Items.EMERALD_BLOCK;
-            title = "Hotbar looping enabled";
+            title = translate("toast.disabled").getString();
         }
 
         Toast toast = new CustomToast(item, title, "- NoHotbarLooping");
