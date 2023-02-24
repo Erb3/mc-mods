@@ -2,15 +2,18 @@ package github.erb3.fabric.cactusfix.mixin;
 
 import github.erb3.fabric.cactusfix.Main;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.CactusBlock;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.ItemEntity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraft.world.WorldView;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(CactusBlock.class)
 public class CactusMixin {
@@ -25,4 +28,16 @@ public class CactusMixin {
             ci.cancel();
         }
     }
+
+    @Inject(method="canPlaceAt", at = @At("HEAD"), cancellable = true)
+    public void onCanPlaceAt(BlockState state, WorldView world, BlockPos pos, CallbackInfoReturnable<Boolean> cir) {
+        if (((World) world).getGameRules().getBoolean(Main.SHOULD_CACTUS_ONLY_BE_DIAGONAL)) {
+            return;
+        }
+
+        BlockState blockState2 = world.getBlockState(pos.down());
+        cir.setReturnValue((blockState2.isOf(Blocks.CACTUS) || blockState2.isOf(Blocks.SAND) || blockState2.isOf(Blocks.RED_SAND)) && !world.getBlockState(pos.up()).getMaterial().isLiquid());
+    }
+
+
 }

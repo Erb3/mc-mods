@@ -12,10 +12,12 @@ public class Main implements ModInitializer {
     public static final GameRules.Key<GameRules.BooleanRule> SHOULD_CACTUS_DAMAGE_ITEMS =
             GameRuleRegistry.register("shouldCactusDamageItems", GameRules.Category.DROPS,
                     GameRuleFactory.createBooleanRule(false));
+    public static final GameRules.Key<GameRules.BooleanRule> SHOULD_CACTUS_ONLY_BE_DIAGONAL =
+            GameRuleRegistry.register("shouldCactusOnlyBeDiagonal", GameRules.Category.MISC,
+                    GameRuleFactory.createBooleanRule(true));
 
     @Override
     public void onInitialize() {
         LOGGER.info("Hello from CactusFix!");
-
     }
 }
