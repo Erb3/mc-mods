@@ -5,24 +5,35 @@
 ![Modrinth versions](https://img.shields.io/modrinth/game-versions/Z29y9YGt?style=for-the-badge)
 ![Modrinth Downloads](https://img.shields.io/modrinth/dt/Z29y9YGt?style=for-the-badge)
 
-Cacti are no longer stronger than lava! Cactusfix makes items not get destroyed by cacti. It still does damage mobs / players, which is intentional. Cactusfix is made for the FabricMC Minecraft modding platform.
+Cactusfix is a mod for FabricMC, which provides multiple fixes for cacti.
 
-The mod works out of the box, just drag and drop it into your mods' folder. This is needed on the serverside too!
-There is a gamerule which can toggle Cactusfix on and off. It is called `shouldCactusDamageItems`, and is off by default. If you wish to enable cactus despawning items, you can run `/gamerule shouldCactusDamageItems true`.
+<!-- TOC -->
+* [Cactusfix](#cactusfix)
+  * [Fixes](#fixes)
+  * [FAQ](#faq)
+<!-- TOC -->
+
+## Fixes
+
+Here is a table of all the fixes provided by Cactusfix:
+
+| Fix name                           | Fix gamerule                | Default value |
+|------------------------------------|-----------------------------|---------------|
+| If cactus should despawn items     | `shouldCactusDamageItems`   | `false`       |
+| If cactus should damage players    | `shouldCactusDamagePlayers` | `true`        |
+| If cactus should be placed weirdly | `betterCactusPlacing`       | `false`       |
+
+The fixes can be toggled with the help of `/gamerule`, if Cactusfix is installed on the server.
 
 ## FAQ
 
 **Can I use this mod in my modpack?**
 
-Yes! You are more than welcome to include my mod in your modpack, if you credit me properly, and make downloads go thru my modrinth page.
+Yes! You are more than welcome to include my mod in your modpack, if you credit me properly, and make downloads go through my modrinth page.
 
 **Does this damage players?**
 
 Originally I made it so players don't take damage, but I decided to remove this for the 1.0.0 release.
-
-**Plz updat to forge**
-
-I won't update to forge, as I have never touched it, and have no plan to do so.
 
 **Will you update this to new MC versions?**
 
