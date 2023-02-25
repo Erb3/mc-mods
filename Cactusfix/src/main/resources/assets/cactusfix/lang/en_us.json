@@ -1,4 +1,4 @@
 {
   "gamerule.shouldCactusDamageItems": "Cactus should despawn items",
-  "gamerule.shouldCactusOnlyBeDiagonal": "Cactus should only be placed diagonally"
+  "gamerule.betterCactusPlacing": "Cactus should have more free placing"
 }
