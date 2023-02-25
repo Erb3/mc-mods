@@ -6,6 +6,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.CactusBlock;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.ItemEntity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldView;
@@ -20,12 +21,16 @@ public class CactusMixin {
 
     @Inject(method = "onEntityCollision", at = @At("HEAD"), cancellable = true)
     public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity, CallbackInfo ci) {
-        if (world.getGameRules().getBoolean(Main.SHOULD_CACTUS_DAMAGE_ITEMS)) {
-            return;
+        if (!world.getGameRules().getBoolean(Main.SHOULD_CACTUS_DAMAGE_ITEMS)) {
+            if (entity instanceof ItemEntity) {
+                ci.cancel();
+            }
         }
 
-        if (entity instanceof ItemEntity) {
-            ci.cancel();
+        if (!world.getGameRules().getBoolean(Main.SHOULD_CACTUS_DAMAGE_PLAYERS)) {
+            if (entity instanceof PlayerEntity) {
+                ci.cancel();
+            }
         }
     }
 

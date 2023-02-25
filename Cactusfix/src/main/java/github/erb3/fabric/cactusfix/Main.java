@@ -15,6 +15,9 @@ public class Main implements ModInitializer {
     public static final GameRules.Key<GameRules.BooleanRule> BETTER_CACTUS_PLACING =
             GameRuleRegistry.register("betterCactusPlacing", GameRules.Category.MISC,
                     GameRuleFactory.createBooleanRule(false));
+    public static final GameRules.Key<GameRules.BooleanRule> SHOULD_CACTUS_DAMAGE_PLAYERS =
+            GameRuleRegistry.register("shouldCactusDamagePlayers", GameRules.Category.PLAYER,
+                    GameRuleFactory.createBooleanRule(true));
 
     @Override
     public void onInitialize() {
