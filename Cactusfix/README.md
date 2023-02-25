@@ -1,7 +1,5 @@
 # Cactusfix
 
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Erb3/Cactusfix?style=for-the-badge)
-![Made for FabricMC](https://img.shields.io/badge/Made%20for-FabricMC-blue?style=for-the-badge)
 ![Modrinth versions](https://img.shields.io/modrinth/game-versions/Z29y9YGt?style=for-the-badge)
 ![Modrinth Downloads](https://img.shields.io/modrinth/dt/Z29y9YGt?style=for-the-badge)
 
