@@ -43,6 +43,4 @@ public class CactusMixin {
         BlockState blockState2 = world.getBlockState(pos.down());
         cir.setReturnValue((blockState2.isOf(Blocks.CACTUS) || blockState2.isOf(Blocks.SAND) || blockState2.isOf(Blocks.RED_SAND)) && !world.getBlockState(pos.up()).getMaterial().isLiquid());
     }
-
-
 }

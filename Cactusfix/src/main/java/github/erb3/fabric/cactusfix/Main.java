@@ -8,6 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class Main implements ModInitializer {
+
     public static final Logger LOGGER = LoggerFactory.getLogger("cactusfix");
     public static final GameRules.Key<GameRules.BooleanRule> SHOULD_CACTUS_DAMAGE_ITEMS =
             GameRuleRegistry.register("shouldCactusDamageItems", GameRules.Category.DROPS,
@@ -21,6 +22,6 @@ public class Main implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        LOGGER.info("Hello from CactusFix!");
+        LOGGER.info("Hello from Cactusfix!");
     }
 }
