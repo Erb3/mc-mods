@@ -12,14 +12,12 @@ import net.minecraft.text.Style;
 import net.minecraft.text.Text;
 import org.jetbrains.annotations.NotNull;
 
-import java.awt.*;
-
 public class CustomToast implements Toast {
 
     // Inspired by Meteor-client/MeteorToast
 
-    public static final int titleColor = Color.WHITE.getRGB();
-    public static final int textColor = Color.LIGHT_GRAY.getRGB();
+    public static final int titleColor = 0xFFFFFF;
+    public static final int textColor = 0xD3D3D3;
 
     private final ItemStack icon;
     private final Text title;
