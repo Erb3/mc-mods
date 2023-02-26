@@ -23,6 +23,7 @@ public class NoHotbarLooping implements ClientModInitializer {
     @SuppressWarnings("SpellCheckingInspection")
     public static final String MOD_ID = "nohotbarlooping";
     public static final Logger LOGGER = LoggerFactory.getLogger("NoHotbarLooping");
+    public static final Config conf = new Config();
     public static boolean enabled = true;
 
 
@@ -41,10 +42,12 @@ public class NoHotbarLooping implements ClientModInitializer {
 
         ClientTickEvents.END_CLIENT_TICK.register((client) -> {
             while (keyBinding.wasPressed()) {
-                enabled = !enabled;
+                conf.toggle();
                 renderToast(enabled);
             }
         });
+
+        conf.loadConfig();
     }
 
     private static void renderToast(boolean enabled) {
