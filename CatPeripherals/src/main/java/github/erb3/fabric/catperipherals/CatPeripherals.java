@@ -10,5 +10,6 @@ public class CatPeripherals implements ModInitializer {
     @Override
     public void onInitialize() {
         LOGGER.info("Hello from CatPeripherals!");
+        PeripheralManager.registerBlocks();
     }
 }
