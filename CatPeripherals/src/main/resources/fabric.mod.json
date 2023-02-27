@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "catperipherals",
+  "version": "${version}",
+  "name": "CatPeripherals",
+  "description": "A ComputerCraft peripheral mod aiming to add useful peripherals.",
+  "authors": [
+    "Erb3"
+  ],
+  "contact": {
+    "website": "https://github.com/Erb3/mc-mods/tree/main/CatPeripherals",
+    "repo": "https://github.com/Erb3/mc-mods.git"
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/catperipherals/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "github.erb3.fabric.catperipherals.CatPeripherals"
+    ]
+  },
+  "mixins": [
+    "catperipherals.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.17",
+    "fabric-api": "*",
+    "minecraft": "1.19.3",
+    "java": ">=17",
+    "computercraft": "1.103.1"
+  }
+}
