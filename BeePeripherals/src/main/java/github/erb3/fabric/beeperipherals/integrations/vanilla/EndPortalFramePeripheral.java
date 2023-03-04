@@ -2,7 +2,6 @@ package github.erb3.fabric.beeperipherals.integrations.vanilla;
 
 import dan200.computercraft.api.lua.LuaFunction;
 import dan200.computercraft.api.peripheral.IPeripheral;
-import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.EndPortalFrameBlock;
 import net.minecraft.util.math.BlockPos;
@@ -20,13 +19,7 @@ public class EndPortalFramePeripheral implements IPeripheral {
 
     @LuaFunction
     public final boolean hasEye() {
-        BlockState frame = this.world.getBlockState(this.pos);
-
-        if (!frame.getBlock().equals(Blocks.END_PORTAL_FRAME)) {
-            throw new Error("The target block isn't a end portal frame!");
-        }
-
-        return frame.get(EndPortalFrameBlock.EYE);
+        return this.world.getBlockState(this.pos).get(EndPortalFrameBlock.EYE);
     }
 
     @Override
