@@ -47,6 +47,13 @@ All integrations need:
   * [ ] Get remaining cooking time
   * [ ] On insert event
   * [ ] On finished event
+* [ ] Campfire
+  * [ ] Get remaining burn time
+  * [ ] Inventory
+  * [ ] Get remaining cooking time
+  * [ ] Get amount of slots left
+  * [ ] On insert event
+  * [ ] On finish event
 * [ ] Anvil
   * ?
 * [ ] Cauldron
