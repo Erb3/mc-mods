@@ -33,8 +33,6 @@ public class CustomToast implements Toast {
         this.duration = 6000;
     }
 
-
-
     @Override
     public Visibility draw(MatrixStack matrices, ToastManager manager, long currentTime) {
         if (!timeStarted) {
@@ -45,14 +43,14 @@ public class CustomToast implements Toast {
         RenderSystem.setShader(GameRenderer::getPositionTexProgram);
         RenderSystem.setShaderTexture(0, TEXTURE);
         RenderSystem.setShaderColor(1, 1, 1, 1);
-        manager.drawTexture(matrices, 0, 0, 0, 0, getWidth(), getHeight());
+        ToastManager.drawTexture(matrices, 0, 0, 0, 0, getWidth(), getHeight());
 
         int x = 28;
         MinecraftClient mc = MinecraftClient.getInstance();
 
         mc.textRenderer.draw(matrices, title, x, 7, titleColor);
         mc.textRenderer.draw(matrices, text, x, 18, textColor);
-        mc.getItemRenderer().renderInGui(icon, 8, 8);
+        mc.getItemRenderer().renderInGui(matrices, icon, 8, 8);
 
         return currentTime - start >= duration ? Toast.Visibility.HIDE : Toast.Visibility.SHOW;
     }

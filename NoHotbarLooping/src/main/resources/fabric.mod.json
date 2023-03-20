@@ -6,7 +6,7 @@
   "description": "A mod that can disable looping of your hotbar (clientside only)",
   "authors": [
     "Erb3",
-    "contributors"
+    "Contributors"
   ],
   "contact": {
     "website": "https://github.com/Erb3/mc-mods/NoHotbarLooping",
@@ -30,8 +30,8 @@
     "nohotbarlooping.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.14.13",
-    "minecraft": "1.19.3",
+    "fabricloader": ">=0.14",
+    "minecraft": "1.19.4",
     "java": ">=17",
     "fabric-api": "*",
     "fabric-key-binding-api-v1": "*"
