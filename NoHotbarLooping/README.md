@@ -4,11 +4,18 @@
 Ever wanted your hotbar to not loop when you scroll at the end of it? This mod fixes this!
 Simply add this mod to your game, and you can no longer loop through your hotbar.
 
+## Features
+
+- Toasts
+- Keybindings
+- ModMenu integration
+
 ## FAQ
 
 **Can I use this mod in my modpack?**
 
-Yes! You are more than welcome to include my mod in your modpack, if you credit me properly, and make downloads go thru my modrinth page.
+Yes! You are more than welcome to include my mod in your modpack, if you credit me properly, and make downloads go through my modrinth page.
+I would also appreciate if you told me about it 😊.
 
 **Plz updat to forge**
 
