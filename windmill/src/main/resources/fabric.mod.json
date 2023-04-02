@@ -8,7 +8,7 @@
     "Erb3"
   ],
   "contact": {
-    "website": "https://github.com/Erb3/mc-mods",
+    "website": "https://github.com/Erb3/mc-mods/windmill",
     "repo": "https://github.com/Erb3/mc-mods"
   },
   "license": "GPL-3.0",
@@ -24,7 +24,6 @@
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
-    "fabric": "*",
     "minecraft": "${minecraft_version}"
   }
 }
