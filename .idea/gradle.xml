@@ -59,7 +59,7 @@
         <option name="gradleHome" value="D:/Program Files/gradle-7.6" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/windmill" />
+            <option value="$PROJECT_DIR$/Windmill" />
           </set>
         </option>
       </GradleProjectSettings>
