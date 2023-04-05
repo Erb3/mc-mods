@@ -22,6 +22,11 @@ public class EndPortalFramePeripheral implements IPeripheral {
         return this.world.getBlockState(this.pos).get(EndPortalFrameBlock.EYE);
     }
 
+    @LuaFunction
+    public final String isPortalFinished() {
+        return EndPortalFrameBlock.getCompletedFramePattern().searchAround(this.world, this.pos).toString();
+    }
+
     @Override
     public final String getType() {
         return "end_portal_frame";
