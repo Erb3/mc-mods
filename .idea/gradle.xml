@@ -45,16 +45,6 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/aprils" />
-        <option name="gradleHome" value="D:/Program Files/gradle-7.6" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/aprils" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/windmill" />
         <option name="gradleHome" value="D:/Program Files/gradle-7.6" />
         <option name="modules">

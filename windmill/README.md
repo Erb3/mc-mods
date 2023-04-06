@@ -2,9 +2,11 @@
 # April Fools 2023 - Windmill mode
 
 ![Powered by FabricMC](https://img.shields.io/badge/Powered%20by-FabricMC-blue)
-![Built with](https://img.shields.io/badge/Built%20with-frogs-green)
+[![Built with apioforms](https://img.shields.io/badge/Built%20with-apioforms-green)](https://www.urbandictionary.com/define.php?term=apioform)
+![No forge](./assets/kneecaps.png)
+![Video showcasing "Windmill" mod](./assets/GifShowcase.gif)
 
-In the 2023 April fools snapshot released by Mojang, they included a "Windmill mode". This mod ports that to feature to fabric 1.19+.
+In the 2023 April fools snapshot released by Mojang, they included a "Windmill mode". This mod implements something similar on normal versions.
 Windmill mode is basically that your arms and legs spin very fast when walking. This also applies to mobs.
 
 ## FAQ

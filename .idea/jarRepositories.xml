@@ -44,12 +44,14 @@
     <remote-repository>
       <option name="id" value="LoomLocalMinecraft" />
       <option name="name" value="LoomLocalMinecraft" />
-      <option name="url" value="file:/$PROJECT_DIR$/NoHotbarLooping/.gradle/loom-cache/minecraftMaven/" />
+      <option name="url"
+        value="file:/$PROJECT_DIR$/NoHotbarLooping/.gradle/loom-cache/minecraftMaven/" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="LoomLocalRemappedMods" />
       <option name="name" value="LoomLocalRemappedMods" />
-      <option name="url" value="file:/$PROJECT_DIR$/NoHotbarLooping/.gradle/loom-cache/remapped_mods/" />
+      <option name="url"
+        value="file:/$PROJECT_DIR$/NoHotbarLooping/.gradle/loom-cache/remapped_mods/" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="maven" />
@@ -64,12 +66,14 @@
     <remote-repository>
       <option name="id" value="LoomLocalRemappedMods" />
       <option name="name" value="LoomLocalRemappedMods" />
-      <option name="url" value="file:/$PROJECT_DIR$/CatPeripherals/.gradle/loom-cache/remapped_mods/" />
+      <option name="url"
+        value="file:/$PROJECT_DIR$/CatPeripherals/.gradle/loom-cache/remapped_mods/" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="LoomLocalMinecraft" />
       <option name="name" value="LoomLocalMinecraft" />
-      <option name="url" value="file:/$PROJECT_DIR$/CatPeripherals/.gradle/loom-cache/minecraftMaven/" />
+      <option name="url"
+        value="file:/$PROJECT_DIR$/CatPeripherals/.gradle/loom-cache/minecraftMaven/" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="maven" />
@@ -84,22 +88,19 @@
     <remote-repository>
       <option name="id" value="LoomLocalRemappedMods" />
       <option name="name" value="LoomLocalRemappedMods" />
-      <option name="url" value="file:/$PROJECT_DIR$/BeePeripherals/.gradle/loom-cache/remapped_mods/" />
+      <option name="url"
+        value="file:/$PROJECT_DIR$/BeePeripherals/.gradle/loom-cache/remapped_mods/" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="LoomLocalMinecraft" />
       <option name="name" value="LoomLocalMinecraft" />
-      <option name="url" value="file:/$PROJECT_DIR$/BeePeripherals/.gradle/loom-cache/minecraftMaven/" />
+      <option name="url"
+        value="file:/$PROJECT_DIR$/BeePeripherals/.gradle/loom-cache/minecraftMaven/" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="UserLocalRemappedMods" />
       <option name="name" value="UserLocalRemappedMods" />
       <option name="url" value="file:/$PROJECT_DIR$/windmill/.gradle/loom-cache/remapped_mods/" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="UserLocalRemappedMods" />
-      <option name="name" value="UserLocalRemappedMods" />
-      <option name="url" value="file:/$PROJECT_DIR$/aprils/.gradle/loom-cache/remapped_mods/" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="UserLocalRemappedMods" />

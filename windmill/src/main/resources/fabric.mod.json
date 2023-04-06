@@ -3,7 +3,7 @@
   "id": "windmill",
   "version": "${version}",
   "name": "windmill",
-  "description": "Adds windmill mode from april fools 2023",
+  "description": "Adds windmill mode :D",
   "authors": [
     "Erb3"
   ],
@@ -15,6 +15,9 @@
   "icon": "assets/windmill/icon.png",
   "environment": "client",
   "entrypoints": {
+    "modmenu": [
+      "github.erb3.fabric.windmill.ModMenuIntegration"
+    ],
     "main": [
       "github.erb3.fabric.windmill.Windmill"
     ]
@@ -25,5 +28,9 @@
   "depends": {
     "fabricloader": ">=${loader_version}",
     "minecraft": "${minecraft_version}"
+  },
+  "recommends": {
+    "modmenu": "*",
+    "cloth-config-api": "*"
   }
 }
