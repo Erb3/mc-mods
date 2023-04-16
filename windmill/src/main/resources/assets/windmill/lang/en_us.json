@@ -1,0 +1,6 @@
+{
+  "windmill.config.title": "Windmill Config",
+  "windmill.config.category": "General",
+  "windmill.config.enabled.name": "Enabled",
+  "windmill.config.enabled.description": "If windmill mode should be enabled"
+}

@@ -14,7 +14,7 @@ public class Config {
         try (FileWriter writer = new FileWriter(configFile)) {
             gson.toJson(Windmill.enabled, writer);
         } catch (IOException e) {
-            Windmill.LOGGER.error("Could not save NoHotbarLooping config!");
+            Windmill.LOGGER.error("Could not save Windmill config!");
             e.printStackTrace();
         }
     }
