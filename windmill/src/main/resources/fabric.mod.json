@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "windmill",
   "version": "${version}",
-  "name": "windmill",
-  "description": "Adds windmill mode :D",
+  "name": "Windmill Mode",
+  "description": "Adds windmill mode from 1. april 2023 :D",
   "authors": [
     "Erb3"
   ],
