@@ -1,4 +1,12 @@
 
+# This repository has been archived.
+
+> [!IMPORTANT]
+> This repository is archived and split into seperate repos.
+
+> Warning
+> This repository is archived and split into seperate repos.
+
 # Erb3's Minecraft Mods
 
 This is the hub for all the Minecraft Mods made by Erb3.
